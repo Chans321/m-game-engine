@@ -13,13 +13,13 @@ func GetSize() float64 {
 		}
 		return 2000.0
 	}
-	if diff > -5.0 && dif <= 0 {
+	if diff > -5.0 && diff <= 0 {
 		return 100.0 + 18.0*diff
 	}
 	return 10.0
 }
 
-func SetScore() bool {
+func SetScore(a float64) bool {
 	pastFourScores = append(pastFourScores, a)
 	pastFourScores = pastFourScores[1:]
 	return true
